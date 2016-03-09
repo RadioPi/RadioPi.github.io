@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>Portfolio OnePage Responsive</title>
+</head>
+<body>
+	<div class="header">
+		<h1>Antonio Calapez</h1>
+		<p>Un portfolio plutot responsive</p>
+	</div>
+	<div class="topBar-fixed">
+		<div class="container">
+				<ul class="menu">
+					<li><a href="#cv">CV</a></li>
+					<li><a href="#projets">Projets</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+		</div>
+	</div>
+	<div class="section" id="cv">
+		<div class="container">
+			<h1>CV</h1>
+			<div class="introduction">
+				<h2>Introduction</h2>
+				<p>Je m'appelle António, j'ai 20 ans et je suis étudiant en 2ème année en Télécommunication et réseaux à l'<a href="http://heh.be">HEH.</a> Je suis un grand passionné d'informatique</p>
+				<p>A grande tendance autodidacte, je suis très orienté développement d'applications web.</p>
+			</div>
+			<!-- div class="info">
+				<h2>Informations personnelles</h2>
+				<ul>
+					<li>Nom: Calapez</li>
+					<li>Prénom: António</li>
+					<li>Âge: 20</li>
+				</ul>
+			</div-->
+		</div>
+	</div>
+	<div class="section">
+		<div id="skillset">
+			<div class="container">
+				<h2>Compétences</h2>
+				<div id="mount-point-competences">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="projets">
+		<div class="container">
+			<h1>Mes projets</h1>
+			<div id="mount-point-projets">
+			</div>
+		</div>
+		<div class="flex-container">
+			<div class"flex-item">
+				<div class="projet">
+					<img src="img/radiopi2.png">
+					<h2>Radio Pi</h2>
+				</div>
+			</div>
+
+			<div class"flex-item">
+				<div class="projet">
+				<img src="img/multiflow.png">
+					<h2>MultiFlow</h2>
+				</div>
+			</div>
+
+			<div class"flex-item">
+				<div class="projet">
+				<img src="img/reverseKeygen.png">
+					<h2>Reverse Keygen</h2>
+				</div>
+			</div>
+
+			<div class"flex-item">
+				<div class="projet">
+				<img src="img/sitePandas.png">
+					<h2>Les Pandas</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="contact">
+		<div class="container">
+			<h1>Formulaire de contact</h1>
+			<p>Me contacter directement par mail!</p>
+			<form action="MAILTO:antonio.verhaverbeke@std.heh.be" method="POST">
+				<label>
+					<input class="inputs input-nom" type="text" name="name" placeholder="Votre nom" required></input><br/>
+				</label>
+				<label>
+					<input class="inputs input-mail" type="email" name="name" placeholder="Votre mail" required></input><br/>
+				</label>
+				<label>
+					<textarea class="inputs input-message" type="text" name="name" placeholder="Votre message..." required></textarea><br/>
+				</label>
+			</form>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/remplissage.js"></script>
+	<!-- script type="text/javascript" src="js/projets.js"></script-->
+</body>
+</html>
