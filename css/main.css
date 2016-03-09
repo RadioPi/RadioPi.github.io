@@ -224,6 +224,7 @@ a:active {
 	order: 1;
 	margin: 5px;
 	padding: 5px;
+	max-width: 33%;
 }
 
 .flex-container img {
@@ -231,6 +232,9 @@ a:active {
 	height: 150px;
 }
 
+.projet:hover {
+	cursor: pointer;
+}
 
 /**
 Mobile

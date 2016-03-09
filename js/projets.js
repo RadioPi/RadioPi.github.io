@@ -62,7 +62,7 @@ var projets = {
 
 function createProjectCard(data){
 	var title = `<h2>${data.title}</h2>`;
-	var description = `<p>${data.description}</p>`;
+	var description = data.description;
 
 	var techs = (function(){
 		var techs = data.techs;
@@ -73,18 +73,29 @@ function createProjectCard(data){
 		return markup;
 	})();
 
-	var pics = (function(){
-		var pics = data.pics;
-		var markup = '';
-		for(var i in pics){
-			markup += `<img class="projectPic" src="${pics[i]}" /><br/>`;
-		}
-		return markup;
-	})();
+	// var pics = (function(){
+	// 	var pics = data.pics;
+	// 	var markup = '';
+	// 	for(var i in pics){
+	// 		markup += `<img class="projectPic" src="${pics[i]}" /><br/>`;
+	// 	}
+	// 	return markup;
+	// })();
 
 	var url = `<a href="${data.link}">Lien</a>`;
-	$("#mount-point-projets").append(title + pics + description + url + "<br />" + techs);
-
+	var markup = `
+				<div class="flex-item">
+					<div class="projet">
+						<a href="${data.pics[0]}" data-lightbox="${data.title.replace(' ', '')}" data-title="${data.description}">
+							<img src="${data.pics[0]}" />
+						${title}
+						<a href="${data.pics[1]}" data-lightbox="${data.title.replace(' ', '')}" data-title="${data.description}">
+							Image 2
+						</a>
+					</div>
+				</div>`;
+	//$("#mount-point-projets").append(title + pics + description + url + "<br />" + techs);
+	$("#mount-point-projets").append(markup);
 }
 
 for(var i in projets){
