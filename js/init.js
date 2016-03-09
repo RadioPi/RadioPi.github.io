@@ -28,3 +28,8 @@ $('a').click(function(){
     }, 500);
     return false;
 });
+
+$('.projet').click(function(e){
+	$(this).toggleClass("fullScreen");
+	console.log("fullScreen");
+});
