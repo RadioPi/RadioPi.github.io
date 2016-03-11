@@ -225,7 +225,7 @@ a:active {
   width: 100%;
   border: #fbfbfb solid 4px;
   cursor: pointer;
-  background-color: #D32F2F;
+  background-color: #424242;
   color: white;
   font-size: 24px;
   padding-top: 22px;
@@ -305,7 +305,7 @@ Mobile
 		height: auto;
 		width: 100%;
 	}
-
+	
 	.header {
 		display: none;
 	}
