@@ -220,6 +220,48 @@ a:active {
   padding: 13px 13px 13px 54px;
 }
 
+.bouton-envoyer {
+  float: left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor: pointer;
+  background-color: #D32F2F;
+  color: white;
+  font-size: 24px;
+  padding-top: 22px;
+  padding-bottom: 15px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700; 
+}
+
+.bouton-envoyer:hover {
+  background-color: #fbfbfb;
+  color: #212121;
+}
+
+.submit:hover {
+  color: #8fb59c; 
+}
+
+.fondu {
+  width: 0px;
+  height: 74px;
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease; 
+}
+
+.submit:hover .fondu {
+  width: 100%;
+  background-color: white; 
+}
+
 .flex-container {
 	display: flex;
 	flex-grow: 1;

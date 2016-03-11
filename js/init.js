@@ -29,7 +29,6 @@ $('a').click(function(){
     return false;
 });
 
-$('.projet').click(function(e){
-	$(this).toggleClass("fullScreen");
-	console.log("fullScreen");
+$(document).ready(function() {
+    $('.tooltip').tooltipster();
 });

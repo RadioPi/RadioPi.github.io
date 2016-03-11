@@ -68,7 +68,7 @@ function createProjectCard(data){
 		var techs = data.techs;
 		var markup = '';
 		for(var i in data.techs){
-			markup += `<span class="hashtag">${data.techs[i]}</span>`;
+			markup += `#${data.techs[i]} `;
 		}
 		return markup;
 	})();
@@ -84,7 +84,7 @@ function createProjectCard(data){
 
 	var url = `<a href="${data.link}">Lien</a>`;
 	var markup = `
-				<div class="flex-item">
+				<div class="flex-item tooltip" title="${techs}">
 					<div class="projet">
 						<a href="${data.pics[0]}" data-lightbox="${data.title.replace(' ', '')}" data-title="${data.description}">
 							<img src="${data.pics[0]}" />
