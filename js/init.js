@@ -25,8 +25,14 @@ $( document ).ready(function() {
 $('a').click(function(){
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top - 50
-    }, 500);
+    }, 500, function(){
+		console.log('done');
+    });
     return false;
+});
+
+$('.header a').click(function() {
+	$(`a[href=${$.attr(this, 'href')}`).addClass('active');
 });
 
 $(document).ready(function() {

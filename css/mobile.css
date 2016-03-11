@@ -1,0 +1,59 @@
+@media screen and (max-width: 640px){
+	/**
+
+	HEADER
+
+	**/
+
+	.header {
+		display: none;
+	}
+
+	/**
+
+	PROJETS
+
+	**/
+	.flex-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/**
+
+	MENU
+
+	**/
+	.topBar {
+		position: fixed;
+		top: 50px;
+		overflow: visible;
+		height: auto;
+		width: 100%;
+	}
+
+	.menu {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.active {
+		border-bottom: none;
+		border-left: 2px solid #D32F2F;
+	}
+
+	/**
+
+	CV
+
+	**/
+	#cv{
+		margin-top: 150px;
+	}
+
+}
