@@ -11,7 +11,7 @@ body, html {
 	top: 0;
 	overflow: hidden;
 	height: 50px;
-	background-color: black;
+	background-color: #424242;
 	width: 100%;
 	margin-bottom: 50px;
 }
@@ -20,7 +20,7 @@ body, html {
 	margin-top: -50px;
 	overflow: hidden;
 	height: 50px;
-	background-color: black;
+	background-color: #424242;
 	width: 100%;
 }
 
@@ -78,6 +78,10 @@ body, html {
 	-o-transition:background 0.5s;
 	transition:background 0.5s;
     background-color: #F44336;
+}
+
+.active {
+	border-bottom: 2px solid #F44336;
 }
 
 .topBar {
@@ -306,6 +310,11 @@ Mobile
 		width: 100%;
 	}
 	
+	.active { 
+		border-bottom: none;
+		border-left: 2px solid #D32F2F;
+	}
+
 	.header {
 		display: none;
 	}
