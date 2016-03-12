@@ -200,8 +200,10 @@ CV
 }
 
 .skillSetTable td {
-	width: 50%;
+	display:inline-block;width:50%;clear:both;
 }
+
+
 
 /**
 
@@ -209,24 +211,55 @@ PROJETS
 
 **/
 
+#projets {
+}
+
+#projets h1{
+}
+
 .flex-container {
 	display: flex;
-	flex-grow: 1;
 	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	flex-grow: 1;
+	flex-wrap: nowrap;
+}
+
+.flex-container > *:first-child{
+	width: 66%;
+}
+
+.flex-container > *:last-child{
+	width: 33%;
+}
+
+.flex-container--reverse {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.flex-container--reverse > *:first-child {
+	width: 33%;
+}
+
+.flex-container--reverse > *:last-child {
+	width: 66%;
 }
 
 .flex-item {
-	order: 1;
-	margin: 5px;
 	padding: 5px;
-	max-width: 33%;
+	height: auto;
+	order: 1;
 }
 
-.flex-container img {
-	width: 150px;
-	height: 150px;
+.flex-item img {
+	max-width: 	100%
+}
+
+.flex-item:last-child{
+}
+
+.flex-item--large {
+
 }
 
 .projet:hover {
